@@ -30,9 +30,18 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/css/soft-ui-dashboard.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/@popperjs/core/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js",
+              "node_modules/smooth-scrollbar/dist/smooth-scrollbar.js",
+              "node_modules/chart.js/dist/chart.js",
+              "src/assets/js/soft-ui-dashboard.js"
+            ]
           },
           "configurations": {
             "production": {
