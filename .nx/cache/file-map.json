@@ -1,0 +1,1471 @@
+{
+  "version": "6.0",
+  "nxVersion": "18.1.0",
+  "deps": {
+    "@angular/animations": "^16.0.0",
+    "@angular/common": "^16.0.0",
+    "@angular/compiler": "^16.0.0",
+    "@angular/core": "^16.0.0",
+    "@angular/forms": "^16.0.0",
+    "@angular/platform-browser": "^16.0.0",
+    "@angular/platform-browser-dynamic": "^16.0.0",
+    "@angular/router": "^16.0.0",
+    "@nrwl/angular": "^18.1.0",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "chart.js": "^4.4.2",
+    "jquery": "^3.7.1",
+    "perfect-scrollbar": "^1.5.5",
+    "rxjs": "~7.8.0",
+    "smooth-scrollbar": "^8.8.4",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.13.0",
+    "@angular-devkit/build-angular": "^16.0.1",
+    "@angular/cli": "~16.0.1",
+    "@angular/compiler-cli": "^16.0.0",
+    "@types/jasmine": "~4.3.0",
+    "jasmine-core": "~4.6.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.0.0",
+    "typescript": "~5.0.2"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "folio": [
+        {
+          "file": ".editorconfig",
+          "hash": "6686520031028425313"
+        },
+        {
+          "file": ".gitignore",
+          "hash": "13044518069027839699"
+        },
+        {
+          "file": ".vscode/extensions.json",
+          "hash": "5331566439708925252"
+        },
+        {
+          "file": ".vscode/launch.json",
+          "hash": "17038929134016848735"
+        },
+        {
+          "file": ".vscode/tasks.json",
+          "hash": "5336636969995539451"
+        },
+        {
+          "file": "README.md",
+          "hash": "15414647699964989717"
+        },
+        {
+          "file": "angular.json",
+          "hash": "9252101215888342192"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "2359286536881599343"
+        },
+        {
+          "file": "package.json",
+          "hash": "18208588122605862953",
+          "deps": [
+            "npm:@angular/animations",
+            "npm:@angular/common",
+            "npm:@angular/compiler",
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/platform-browser",
+            "npm:@angular/platform-browser-dynamic",
+            "npm:@angular/router",
+            "npm:@nrwl/angular",
+            "npm:@popperjs/core",
+            "npm:bootstrap",
+            "npm:chart.js",
+            "npm:jquery",
+            "npm:perfect-scrollbar",
+            "npm:rxjs",
+            "npm:smooth-scrollbar",
+            "npm:tslib",
+            "npm:zone.js",
+            "npm:@angular-devkit/build-angular",
+            "npm:@angular/cli",
+            "npm:@angular/compiler-cli",
+            "npm:@types/jasmine",
+            "npm:jasmine-core",
+            "npm:karma",
+            "npm:karma-chrome-launcher",
+            "npm:karma-coverage",
+            "npm:karma-jasmine",
+            "npm:karma-jasmine-html-reporter",
+            "npm:typescript"
+          ]
+        },
+        {
+          "file": "src/app/app-routing.module.ts",
+          "hash": "13994015376250681851",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/app.component.html",
+          "hash": "17816966185630879015"
+        },
+        {
+          "file": "src/app/app.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/app.component.spec.ts",
+          "hash": "3872737830376486064",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/app.component.ts",
+          "hash": "16480461173311904842",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/app.module.ts",
+          "hash": "8757419611857540618",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "src/app/components/ui/nav-bar/nav-bar.component.html",
+          "hash": "5753736931796917982"
+        },
+        {
+          "file": "src/app/components/ui/nav-bar/nav-bar.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/components/ui/nav-bar/nav-bar.component.spec.ts",
+          "hash": "18005561851509888243",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/components/ui/nav-bar/nav-bar.component.ts",
+          "hash": "2495746341619066105",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/components/ui/side-bars/side-bars.component.html",
+          "hash": "15699525963371078984"
+        },
+        {
+          "file": "src/app/components/ui/side-bars/side-bars.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/components/ui/side-bars/side-bars.component.spec.ts",
+          "hash": "12409587596839572000",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/components/ui/side-bars/side-bars.component.ts",
+          "hash": "4628030392989623875",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/components/ui/ui.module.ts",
+          "hash": "14831786560384635654",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/layout/admin/admin.component.html",
+          "hash": "3621045068508558537"
+        },
+        {
+          "file": "src/app/layout/admin/admin.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/layout/admin/admin.component.spec.ts",
+          "hash": "9734149707744025995",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/layout/admin/admin.component.ts",
+          "hash": "9116930489112146573",
+          "deps": [
+            "npm:@angular/core",
+            "npm:perfect-scrollbar"
+          ]
+        },
+        {
+          "file": "src/app/layout/admin/admin.module.ts",
+          "hash": "7327144704926268973",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/pages/billing.html",
+          "hash": "8289591861376417350"
+        },
+        {
+          "file": "src/app/pages/dashboard.html",
+          "hash": "5516892004288015681"
+        },
+        {
+          "file": "src/app/pages/dashboard/dashboard.component.html",
+          "hash": "15931033806476192640"
+        },
+        {
+          "file": "src/app/pages/dashboard/dashboard.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/pages/dashboard/dashboard.component.spec.ts",
+          "hash": "13268531653547974577",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/pages/dashboard/dashboard.component.ts",
+          "hash": "13850694861048407588",
+          "deps": [
+            "npm:@angular/core",
+            "npm:chart.js",
+            "npm:smooth-scrollbar"
+          ]
+        },
+        {
+          "file": "src/app/pages/profile.html",
+          "hash": "11777225418420877521"
+        },
+        {
+          "file": "src/app/pages/projects/projects.component.html",
+          "hash": "4111214773811666219"
+        },
+        {
+          "file": "src/app/pages/projects/projects.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/pages/projects/projects.component.spec.ts",
+          "hash": "14410600220210666128",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/pages/projects/projects.component.ts",
+          "hash": "651951096208602750",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/pages/rtl.html",
+          "hash": "10328760060349581887"
+        },
+        {
+          "file": "src/app/pages/sign-in.html",
+          "hash": "6561642855169238826"
+        },
+        {
+          "file": "src/app/pages/sign-up.html",
+          "hash": "9188246804965955225"
+        },
+        {
+          "file": "src/app/pages/tables.html",
+          "hash": "12986367652333153274"
+        },
+        {
+          "file": "src/app/pages/users/users.component.html",
+          "hash": "6326850128101758152"
+        },
+        {
+          "file": "src/app/pages/users/users.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/pages/users/users.component.spec.ts",
+          "hash": "17920843274204508483",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/pages/users/users.component.ts",
+          "hash": "15204478766888735784",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/pages/virtual-reality.html",
+          "hash": "7560727486970623003"
+        },
+        {
+          "file": "src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/assets/css/nucleo-icons.css",
+          "hash": "12659727093833860649"
+        },
+        {
+          "file": "src/assets/css/nucleo-svg.css",
+          "hash": "12181045596268662837"
+        },
+        {
+          "file": "src/assets/css/soft-ui-dashboard.css",
+          "hash": "10276503904417011994"
+        },
+        {
+          "file": "src/assets/css/soft-ui-dashboard.css.map",
+          "hash": "3725049182239549217"
+        },
+        {
+          "file": "src/assets/css/soft-ui-dashboard.min.css",
+          "hash": "15158387370755198264"
+        },
+        {
+          "file": "src/assets/fonts/nucleo-icons.eot",
+          "hash": "8840703222962625888"
+        },
+        {
+          "file": "src/assets/fonts/nucleo-icons.svg",
+          "hash": "8155189647184246970"
+        },
+        {
+          "file": "src/assets/fonts/nucleo-icons.ttf",
+          "hash": "17194007546042266916"
+        },
+        {
+          "file": "src/assets/fonts/nucleo-icons.woff",
+          "hash": "16872953955652670318"
+        },
+        {
+          "file": "src/assets/fonts/nucleo-icons.woff2",
+          "hash": "5895755562049641619"
+        },
+        {
+          "file": "src/assets/fonts/nucleo.eot",
+          "hash": "18348621682379203782"
+        },
+        {
+          "file": "src/assets/fonts/nucleo.ttf",
+          "hash": "6088441291323957096"
+        },
+        {
+          "file": "src/assets/fonts/nucleo.woff",
+          "hash": "17883218077339420146"
+        },
+        {
+          "file": "src/assets/fonts/nucleo.woff2",
+          "hash": "9387099997648663586"
+        },
+        {
+          "file": "src/assets/img/apple-icon.png",
+          "hash": "6878168277183361096"
+        },
+        {
+          "file": "src/assets/img/bg1.jpg",
+          "hash": "16927824263991167508"
+        },
+        {
+          "file": "src/assets/img/bruce-mars.jpg",
+          "hash": "9482521583343272163"
+        },
+        {
+          "file": "src/assets/img/curved-images/curved-10.jpg",
+          "hash": "10020156850522375981"
+        },
+        {
+          "file": "src/assets/img/curved-images/curved-11.jpg",
+          "hash": "14635687578133599609"
+        },
+        {
+          "file": "src/assets/img/curved-images/curved-6.jpg",
+          "hash": "13084047977181645062"
+        },
+        {
+          "file": "src/assets/img/curved-images/curved-8.jpg",
+          "hash": "16418536111245707594"
+        },
+        {
+          "file": "src/assets/img/curved-images/curved0.jpg",
+          "hash": "3060482866554051536"
+        },
+        {
+          "file": "src/assets/img/curved-images/curved1.jpg",
+          "hash": "9109429628225754923"
+        },
+        {
+          "file": "src/assets/img/curved-images/curved10.jpg",
+          "hash": "10381397994742862734"
+        },
+        {
+          "file": "src/assets/img/curved-images/curved11-small.jpg",
+          "hash": "17626959836410950865"
+        },
+        {
+          "file": "src/assets/img/curved-images/curved11.jpg",
+          "hash": "7172198997184613507"
+        },
+        {
+          "file": "src/assets/img/curved-images/curved12.jpg",
+          "hash": "4651825512464467967"
+        },
+        {
+          "file": "src/assets/img/curved-images/curved13.jpg",
+          "hash": "17982202153969595468"
+        },
+        {
+          "file": "src/assets/img/curved-images/curved14.jpg",
+          "hash": "2329768986596134424"
+        },
+        {
+          "file": "src/assets/img/curved-images/curved19.jpg",
+          "hash": "5316163564684456836"
+        },
+        {
+          "file": "src/assets/img/curved-images/curved2.jpg",
+          "hash": "16881135968097876014"
+        },
+        {
+          "file": "src/assets/img/curved-images/curved21.jpg",
+          "hash": "4642211974017462171"
+        },
+        {
+          "file": "src/assets/img/curved-images/curved3.jpg",
+          "hash": "4201341531441869323"
+        },
+        {
+          "file": "src/assets/img/curved-images/curved4.jpg",
+          "hash": "18431068801501986725"
+        },
+        {
+          "file": "src/assets/img/curved-images/curved5-small.jpg",
+          "hash": "13915101623176706734"
+        },
+        {
+          "file": "src/assets/img/curved-images/curved5.jpg",
+          "hash": "282198370873267927"
+        },
+        {
+          "file": "src/assets/img/curved-images/curved6-small.jpg",
+          "hash": "4840321225652374623"
+        },
+        {
+          "file": "src/assets/img/curved-images/curved6.jpg",
+          "hash": "9048482329594831822"
+        },
+        {
+          "file": "src/assets/img/curved-images/curved7.jpg",
+          "hash": "16171666688844218403"
+        },
+        {
+          "file": "src/assets/img/curved-images/curved8.jpg",
+          "hash": "12882260477717605949"
+        },
+        {
+          "file": "src/assets/img/curved-images/curved9.jpg",
+          "hash": "6847009954793846823"
+        },
+        {
+          "file": "src/assets/img/curved-images/white-curved.jpg",
+          "hash": "18351510628267469569"
+        },
+        {
+          "file": "src/assets/img/down-arrow-dark.svg",
+          "hash": "18090091844988108650"
+        },
+        {
+          "file": "src/assets/img/down-arrow-white.svg",
+          "hash": "10550504293939953526"
+        },
+        {
+          "file": "src/assets/img/down-arrow.svg",
+          "hash": "2355064128082668279"
+        },
+        {
+          "file": "src/assets/img/favicon.png",
+          "hash": "6878168277183361096"
+        },
+        {
+          "file": "src/assets/img/home-decor-1.jpg",
+          "hash": "9708985088937907136"
+        },
+        {
+          "file": "src/assets/img/home-decor-2.jpg",
+          "hash": "3718129259834279010"
+        },
+        {
+          "file": "src/assets/img/home-decor-3.jpg",
+          "hash": "10148027626233817237"
+        },
+        {
+          "file": "src/assets/img/illustrations/rocket-dark.png",
+          "hash": "8367643504573657386"
+        },
+        {
+          "file": "src/assets/img/illustrations/rocket-white.png",
+          "hash": "9259504502130029705"
+        },
+        {
+          "file": "src/assets/img/ivana-square.jpg",
+          "hash": "7026563100526129527"
+        },
+        {
+          "file": "src/assets/img/ivancik.jpg",
+          "hash": "782948766345014374"
+        },
+        {
+          "file": "src/assets/img/kal-visuals-square.jpg",
+          "hash": "15252452091591793773"
+        },
+        {
+          "file": "src/assets/img/logo-ct-dark.png",
+          "hash": "16582665402739077796"
+        },
+        {
+          "file": "src/assets/img/logo-ct.png",
+          "hash": "10371670988616438649"
+        },
+        {
+          "file": "src/assets/img/logos/mastercard.png",
+          "hash": "9972480263492796645"
+        },
+        {
+          "file": "src/assets/img/logos/visa.png",
+          "hash": "15680898350426120876"
+        },
+        {
+          "file": "src/assets/img/marie.jpg",
+          "hash": "14438882039281767822"
+        },
+        {
+          "file": "src/assets/img/shapes/pattern-lines.svg",
+          "hash": "7042491300308080265"
+        },
+        {
+          "file": "src/assets/img/shapes/shape-1.svg",
+          "hash": "14981518869908230138"
+        },
+        {
+          "file": "src/assets/img/shapes/shape-2.svg",
+          "hash": "14712181307843037660"
+        },
+        {
+          "file": "src/assets/img/shapes/shape-3.svg",
+          "hash": "17811655558402125655"
+        },
+        {
+          "file": "src/assets/img/shapes/wave-down.svg",
+          "hash": "16769940542573785340"
+        },
+        {
+          "file": "src/assets/img/shapes/wave-up.svg",
+          "hash": "5548423748947229197"
+        },
+        {
+          "file": "src/assets/img/shapes/waves-gray.svg",
+          "hash": "4862871885439461432"
+        },
+        {
+          "file": "src/assets/img/shapes/waves-white.svg",
+          "hash": "11714997341595888128"
+        },
+        {
+          "file": "src/assets/img/small-logos/icon-sun-cloud.png",
+          "hash": "9107350984646476185"
+        },
+        {
+          "file": "src/assets/img/small-logos/logo-atlassian.svg",
+          "hash": "3689176787588207571"
+        },
+        {
+          "file": "src/assets/img/small-logos/logo-invision.svg",
+          "hash": "13813456486213382377"
+        },
+        {
+          "file": "src/assets/img/small-logos/logo-jira.svg",
+          "hash": "7680646578932470720"
+        },
+        {
+          "file": "src/assets/img/small-logos/logo-slack.svg",
+          "hash": "5488882409163859393"
+        },
+        {
+          "file": "src/assets/img/small-logos/logo-spotify.svg",
+          "hash": "4241039052816680909"
+        },
+        {
+          "file": "src/assets/img/small-logos/logo-webdev.svg",
+          "hash": "3515399347463504140"
+        },
+        {
+          "file": "src/assets/img/small-logos/logo-xd.svg",
+          "hash": "5129901677014049453"
+        },
+        {
+          "file": "src/assets/img/soft-ui-dashboard-intro.gif",
+          "hash": "10886024265974222310"
+        },
+        {
+          "file": "src/assets/img/soft-ui-dashboard-screen-billing.png",
+          "hash": "11804839648809320880"
+        },
+        {
+          "file": "src/assets/img/soft-ui-dashboard-screen-login.png",
+          "hash": "5791608800950377963"
+        },
+        {
+          "file": "src/assets/img/soft-ui-dashboard-screen-profile.png",
+          "hash": "12596587970116256893"
+        },
+        {
+          "file": "src/assets/img/soft-ui-dashboard-screen-rtl.png",
+          "hash": "13769695173980103854"
+        },
+        {
+          "file": "src/assets/img/soft-ui-dashboard-screen.png",
+          "hash": "13641585264443641374"
+        },
+        {
+          "file": "src/assets/img/team-1.jpg",
+          "hash": "16667914426304832201"
+        },
+        {
+          "file": "src/assets/img/team-2.jpg",
+          "hash": "8327369123892612815"
+        },
+        {
+          "file": "src/assets/img/team-3.jpg",
+          "hash": "4637205699854251068"
+        },
+        {
+          "file": "src/assets/img/team-4.jpg",
+          "hash": "6250550149207519009"
+        },
+        {
+          "file": "src/assets/img/theme/angular.jpg",
+          "hash": "725184418222997843"
+        },
+        {
+          "file": "src/assets/img/theme/bootstrap.jpg",
+          "hash": "13299744822368410204"
+        },
+        {
+          "file": "src/assets/img/theme/dribbble.png",
+          "hash": "14326230438627051638"
+        },
+        {
+          "file": "src/assets/img/theme/dropbox.png",
+          "hash": "13659009175529127399"
+        },
+        {
+          "file": "src/assets/img/theme/mastercard.png",
+          "hash": "15821529027191861818"
+        },
+        {
+          "file": "src/assets/img/theme/paypal.png",
+          "hash": "1258650467031522688"
+        },
+        {
+          "file": "src/assets/img/theme/react.jpg",
+          "hash": "12463380006992727377"
+        },
+        {
+          "file": "src/assets/img/theme/sketch.jpg",
+          "hash": "8338661526429863926"
+        },
+        {
+          "file": "src/assets/img/theme/slack.png",
+          "hash": "953780763945418554"
+        },
+        {
+          "file": "src/assets/img/theme/spotify.jpeg",
+          "hash": "14366014488591575265"
+        },
+        {
+          "file": "src/assets/img/theme/tim.png",
+          "hash": "8062743093170981231"
+        },
+        {
+          "file": "src/assets/img/theme/unass.jpg",
+          "hash": "1584164452318303543"
+        },
+        {
+          "file": "src/assets/img/theme/visa.png",
+          "hash": "10077728146484152844"
+        },
+        {
+          "file": "src/assets/img/theme/vue.jpg",
+          "hash": "5290025913742607695"
+        },
+        {
+          "file": "src/assets/img/vr-bg.jpg",
+          "hash": "4661377487926226656"
+        },
+        {
+          "file": "src/assets/js/plugins/Chart.extension.js",
+          "hash": "9403689020221677530"
+        },
+        {
+          "file": "src/assets/js/plugins/bootstrap-notify.js",
+          "hash": "1481201286770237393",
+          "deps": [
+            [
+              "npm:jquery",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "src/assets/js/soft-ui-dashboard.js",
+          "hash": "13813398497968491003"
+        },
+        {
+          "file": "src/assets/js/soft-ui-dashboard.js.map",
+          "hash": "4300895940698558332"
+        },
+        {
+          "file": "src/assets/js/soft-ui-dashboard.min.js",
+          "hash": "12588456741855384621"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard.scss",
+          "hash": "17581417737143900633"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_alert.scss",
+          "hash": "5013338407023024200"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_avatars.scss",
+          "hash": "6517895625545763510"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_badge.scss",
+          "hash": "4873756513367241577"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_breadcrumbs.scss",
+          "hash": "2808431635140831283"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_buttons.scss",
+          "hash": "14253406940533178538"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_cards.scss",
+          "hash": "15998105903431584186"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_dark-version.scss",
+          "hash": "3338880740609212644"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_dropdown.scss",
+          "hash": "1677646314707888814"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_dropup.scss",
+          "hash": "9039664939280098022"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_fixed-plugin.scss",
+          "hash": "618981051850335166"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_footer.scss",
+          "hash": "16073080922828633391"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_forms.scss",
+          "hash": "12110962865402097657"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_gradients.scss",
+          "hash": "5656781220930082009"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_header.scss",
+          "hash": "11112981078026795176"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_info-areas.scss",
+          "hash": "10995472393982886017"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_misc.scss",
+          "hash": "17755494894720527665"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_nav.scss",
+          "hash": "7555833099952174868"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_navbar-vertical.scss",
+          "hash": "18012622238396854734"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_navbar.scss",
+          "hash": "12890832779972916798"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_pagination.scss",
+          "hash": "12802236307232573444"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_popovers.scss",
+          "hash": "16894283029444365188"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_progress.scss",
+          "hash": "4667022711189105603"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_rtl.scss",
+          "hash": "15422358072813798530"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_social-buttons.scss",
+          "hash": "12837712052901200584"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_tables.scss",
+          "hash": "9185110079601446819"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_tilt.scss",
+          "hash": "13242323974587572046"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_timeline.scss",
+          "hash": "9330954928716073725"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_tooltips.scss",
+          "hash": "15508247698668385180"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_typography.scss",
+          "hash": "17750762464331540901"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_utilities-extend.scss",
+          "hash": "7640148416716033632"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_utilities.scss",
+          "hash": "1865558966023147275"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/_variables.scss",
+          "hash": "16759861746142070360"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_accordion.scss",
+          "hash": "7161246240785540797"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_alert.scss",
+          "hash": "6595476277041547597"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_badge.scss",
+          "hash": "15909508442979064511"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_breadcrumb.scss",
+          "hash": "18410078031801069270"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_button-group.scss",
+          "hash": "3450017044376052221"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_buttons.scss",
+          "hash": "16281703232928401281"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_card.scss",
+          "hash": "1834633879907482157"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_carousel.scss",
+          "hash": "11825596339270905433"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_close.scss",
+          "hash": "8314449705105977477"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_containers.scss",
+          "hash": "1788307046327497716"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_dropdown.scss",
+          "hash": "8961538918170479549"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_forms.scss",
+          "hash": "11558489909389098791"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_functions.scss",
+          "hash": "276427462273970883"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_grid.scss",
+          "hash": "13950774481051181181"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_helpers.scss",
+          "hash": "15764848128767626129"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_images.scss",
+          "hash": "4982170733423706710"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_list-group.scss",
+          "hash": "15060019520886146727"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_maps.scss",
+          "hash": "15490237936567896607"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_mixins.scss",
+          "hash": "11196649198116320049"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_modal.scss",
+          "hash": "1569721248483009942"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_nav.scss",
+          "hash": "2605136512478844170"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_navbar.scss",
+          "hash": "17961451845221238748"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_offcanvas.scss",
+          "hash": "7459886021742811103"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_pagination.scss",
+          "hash": "12555707679705118577"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_placeholders.scss",
+          "hash": "11347557082796933105"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_popover.scss",
+          "hash": "16668676595129709026"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_progress.scss",
+          "hash": "13417946259100530433"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_reboot.scss",
+          "hash": "16455090427037161743"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_root.scss",
+          "hash": "522286470003271449"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_spinners.scss",
+          "hash": "13522178650511599879"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_tables.scss",
+          "hash": "8425788696245219261"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_toasts.scss",
+          "hash": "12158336581333349862"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_tooltip.scss",
+          "hash": "10590189354128214217"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_transitions.scss",
+          "hash": "7101400571290183336"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_type.scss",
+          "hash": "5259128476597825657"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_utilities.scss",
+          "hash": "3545391569928756436"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/_variables.scss",
+          "hash": "15211610992593668343"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/bootstrap-grid.scss",
+          "hash": "18254019589080802035"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/bootstrap-reboot.scss",
+          "hash": "11967346156321227410"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/bootstrap-utilities.scss",
+          "hash": "5693321186376721913"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/bootstrap.scss",
+          "hash": "12169702785478523069"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/forms/_floating-labels.scss",
+          "hash": "17446937355469890689"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/forms/_form-check.scss",
+          "hash": "5357312981652230486"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/forms/_form-control.scss",
+          "hash": "14035664780936396346"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/forms/_form-range.scss",
+          "hash": "5452140434602961749"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/forms/_form-select.scss",
+          "hash": "18278499100521982018"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/forms/_form-text.scss",
+          "hash": "4579554377243947949"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/forms/_input-group.scss",
+          "hash": "4205794975766776697"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/forms/_labels.scss",
+          "hash": "8636358195804018548"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/forms/_validation.scss",
+          "hash": "16722523635152407671"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/helpers/_clearfix.scss",
+          "hash": "6016794454409036601"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/helpers/_color-bg.scss",
+          "hash": "6749788190691285627"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/helpers/_colored-links.scss",
+          "hash": "7570884378566800303"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/helpers/_position.scss",
+          "hash": "12017510904472805258"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/helpers/_ratio.scss",
+          "hash": "17396332309574117702"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/helpers/_stacks.scss",
+          "hash": "2237806523893904244"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/helpers/_stretched-link.scss",
+          "hash": "6563802264522303940"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/helpers/_text-truncation.scss",
+          "hash": "6148272565950195087"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/helpers/_visually-hidden.scss",
+          "hash": "8994652425147521918"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/helpers/_vr.scss",
+          "hash": "2884185939989096883"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/mixins/_alert.scss",
+          "hash": "13348790061427099572"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/mixins/_backdrop.scss",
+          "hash": "1221827715013267058"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/mixins/_banner.scss",
+          "hash": "1195717892667854722"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/mixins/_border-radius.scss",
+          "hash": "18439781542629247250"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/mixins/_box-shadow.scss",
+          "hash": "16977987387404589821"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/mixins/_breakpoints.scss",
+          "hash": "7805341877681996418"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/mixins/_buttons.scss",
+          "hash": "8025836170231762795"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/mixins/_caret.scss",
+          "hash": "18226310186040093559"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/mixins/_clearfix.scss",
+          "hash": "1824316376767279788"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/mixins/_color-scheme.scss",
+          "hash": "10297598550345095193"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/mixins/_container.scss",
+          "hash": "10257422170032006897"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/mixins/_deprecate.scss",
+          "hash": "6097440034223031436"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/mixins/_forms.scss",
+          "hash": "17631118865446713803"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/mixins/_gradients.scss",
+          "hash": "16610039445602312696"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/mixins/_grid.scss",
+          "hash": "1856835452192955303"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/mixins/_image.scss",
+          "hash": "14339722891433994406"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/mixins/_list-group.scss",
+          "hash": "5548844650898769841"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/mixins/_lists.scss",
+          "hash": "11538079641341320320"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/mixins/_pagination.scss",
+          "hash": "14672582946888405515"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/mixins/_reset-text.scss",
+          "hash": "13892530751291500534"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/mixins/_resize.scss",
+          "hash": "8774235214685530994"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/mixins/_table-variants.scss",
+          "hash": "3394098068643326468"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/mixins/_text-truncate.scss",
+          "hash": "35621397401141793"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/mixins/_transition.scss",
+          "hash": "4804125585489023896"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/mixins/_utilities.scss",
+          "hash": "991826652640941017"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/mixins/_visually-hidden.scss",
+          "hash": "10454508823788898196"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/utilities/_api.scss",
+          "hash": "3789365283697039723"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/bootstrap/vendor/_rfs.scss",
+          "hash": "800997434622931571"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/cards/card-background.scss",
+          "hash": "1021477910608533804"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/custom/_styles.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/custom/_variables.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/forms/_form-check.scss",
+          "hash": "16323588139202897375"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/forms/_form-select.scss",
+          "hash": "14219955256961657858"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/forms/_form-switch.scss",
+          "hash": "32382652390637937"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/forms/_forms.scss",
+          "hash": "17660385270659488944"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/forms/_input-group.scss",
+          "hash": "283732125629052483"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/forms/_inputs.scss",
+          "hash": "15012513951189617342"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/forms/_labels.scss",
+          "hash": "4577521473477572305"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/mixins/_badge.scss",
+          "hash": "5727314052722718079"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/mixins/_colored-shadows.scss",
+          "hash": "16270796172943069290"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/mixins/_container.scss",
+          "hash": "16102960743351172567"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/mixins/_hover.scss",
+          "hash": "12791586401587722295"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/mixins/_social-buttons.scss",
+          "hash": "11563385595791133556"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/mixins/mixins.scss",
+          "hash": "15384038084994644388"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/plugins/free/_flatpickr.scss",
+          "hash": "13729732613463288143"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/plugins/free/_nouislider.scss",
+          "hash": "10122575241330733379"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/plugins/free/_perfect-scrollbar.scss",
+          "hash": "13844897120556811059"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/plugins/free/_prism.scss",
+          "hash": "13057929819688848042"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/plugins/free/plugins.scss",
+          "hash": "7716176252111505092"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/theme.scss",
+          "hash": "14513775841708807464"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/variables/_animations.scss",
+          "hash": "11490203402219920532"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/variables/_avatars.scss",
+          "hash": "17007405300581323222"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/variables/_badge.scss",
+          "hash": "8349902951657017981"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/variables/_breadcrumb.scss",
+          "hash": "2580029694496115261"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/variables/_cards-extend.scss",
+          "hash": "3720735486061506031"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/variables/_cards.scss",
+          "hash": "18080102898972028012"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/variables/_choices.scss",
+          "hash": "6017448643104261128"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/variables/_dark-version.scss",
+          "hash": "8990871625788737993"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/variables/_dropdowns.scss",
+          "hash": "8697652242879155683"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/variables/_fixed-plugin.scss",
+          "hash": "8209245279082763334"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/variables/_form-switch.scss",
+          "hash": "12374017563206871839"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/variables/_full-calendar.scss",
+          "hash": "16034264610653271373"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/variables/_header.scss",
+          "hash": "3414951391862818869"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/variables/_info-areas.scss",
+          "hash": "14651324888180678072"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/variables/_misc-extend.scss",
+          "hash": "11044666402445479093"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/variables/_misc.scss",
+          "hash": "8164610687735854506"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/variables/_navbar-vertical.scss",
+          "hash": "17513867268112158896"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/variables/_navbar.scss",
+          "hash": "13523552733601122324"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/variables/_pagination.scss",
+          "hash": "3878125032071801677"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/variables/_rtl.scss",
+          "hash": "11880665104106060703"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/variables/_social-buttons.scss",
+          "hash": "5810707505622186764"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/variables/_table.scss",
+          "hash": "17159886987152115601"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/variables/_timeline.scss",
+          "hash": "15303650875026330867"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/variables/_utilities-extend.scss",
+          "hash": "3600556098819131933"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/variables/_utilities.scss",
+          "hash": "10156017969672657573"
+        },
+        {
+          "file": "src/assets/scss/soft-ui-dashboard/variables/_virtual-reality.scss",
+          "hash": "1864804173945763010"
+        },
+        {
+          "file": "src/favicon.ico",
+          "hash": "3464744996580215640"
+        },
+        {
+          "file": "src/index.html",
+          "hash": "13885024252376749361"
+        },
+        {
+          "file": "src/main.ts",
+          "hash": "12246588107753938993",
+          "deps": [
+            "npm:@angular/platform-browser-dynamic"
+          ]
+        },
+        {
+          "file": "src/styles.scss",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "tsconfig.app.json",
+          "hash": "17337579397915052279"
+        },
+        {
+          "file": "tsconfig.json",
+          "hash": "1047940026627514556"
+        },
+        {
+          "file": "tsconfig.spec.json",
+          "hash": "15575553540147145788"
+        }
+      ]
+    },
+    "nonProjectFiles": []
+  }
+}
