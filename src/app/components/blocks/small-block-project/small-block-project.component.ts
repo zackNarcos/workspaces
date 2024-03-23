@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-small-block-project',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./small-block-project.component.scss']
 })
 export class SmallBlockProjectComponent {
-
+  @Input() project: any;
+  @Input() isRealisation = false;
 }

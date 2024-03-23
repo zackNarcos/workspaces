@@ -1,0 +1,93 @@
+<!-- -------- START PRE-FOOTER 1 w/ SUBSCRIBE BUTTON AND IMAGE ------- -->
+<section class="my-5 pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 m-auto">
+        <h4>
+          Soyez informé des dernières nouvelles et mises à jour.
+        </h4>
+        <p class="mb-4">
+          Nous ne vous enverrons que des mises à jour sur les nouveaux produits et les offres spéciales,
+          rien d'autre.
+        </p>
+        <div class="row">
+          <div class="col-8">
+            <div class="input-group">
+              <input type="email"
+                     name="mail"
+                     class="form-control mb-sm-0"
+                     placeholder="Votre mail ici..."
+                     [formControl]="mailControl"
+              >
+            </div>
+          </div>
+          <div class="col-4 ps-0">
+            <button type="button"
+                    [disabled]="mailControl.invalid"
+                    (click)="subscribe()"
+                    class="btn bg-gradient-info mb-0 h-100 position-relative z-index-2">
+              <span class="text-white">S'abonner</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 ms-auto mt-5 mt-md-0">
+        <div class="position-relative">
+          <img class="max-width-50 w-100 position-relative z-index-2" src="../assets/img/illustrations/sign-up.png" alt="image">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- -------- END PRE-FOOTER 1 w/ SUBSCRIBE BUTTON AND IMAGE ------- -->
+<footer class="footer pt-0 pt-md-5 mt-3">
+  <hr class="horizontal dark mb-5">
+  <div class="container">
+    <div class="row">
+      <div class="mb-4">
+        <div class="text-center">
+
+          <img src="../assets/img/logos/logo-zack.png" alt="logo" class=" w-30 w-md-10">
+          <h6 class="my-3 opacity-8">
+            Vivre, apprendre & progresser un jour à la fois.
+          </h6>
+          <ul class="d-flex flex-row justify-content-center nav">
+            <li class="nav-item">
+              <a class="nav-link pe-1" [href]="links.facebook" target="_blank">
+                <i class="fab fa-facebook h2 opacity-8"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pe-1" [href]="links.instagram" target="_blank">
+                <i class="fab fa-instagram h2 opacity-8"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pe-1" [href]="links.github" target="_blank">
+                <i class="fab fa-github h2 opacity-8"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pe-1" [href]="links.youtube" target="_blank">
+                <i class="fab fa-youtube h2 opacity-8"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pe-1" [href]="links.linkedin" target="_blank">
+                <i class="fab fa-linkedin h2 opacity-8"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="text-center">
+          <p class="my-4 text-sm">
+            Fait avec <i class="fa fa-heart text-danger"></i> par Moi
+            &copy; Creative Tim
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

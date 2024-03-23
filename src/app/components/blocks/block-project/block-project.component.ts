@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {Project} from "../../../core/models/project";
 
 @Component({
   selector: 'app-block-project',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./block-project.component.scss']
 })
 export class BlockProjectComponent {
-
+  @Input() project: Project;
 }

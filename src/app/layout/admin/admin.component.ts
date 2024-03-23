@@ -1,5 +1,6 @@
 import {AfterViewInit, Component, OnInit} from '@angular/core';
 import PerfectScrollbar from "perfect-scrollbar";
+import {ModuleStoreService} from "../../core/store/module-store.service";
 
 @Component({
   selector: 'app-admin',
@@ -8,11 +9,14 @@ import PerfectScrollbar from "perfect-scrollbar";
 })
 export class AdminComponent implements OnInit, AfterViewInit {
 
-  constructor() { }
+  constructor(
+    private moduleStoreService: ModuleStoreService
+  ) {
+    this.moduleStoreService.loadProjects()
+  }
 
   ngOnInit() {
   }
-
   ngAfterViewInit() {
     this.navbarFixed(0);
     // Toggle Sidenav
@@ -192,36 +196,6 @@ export class AdminComponent implements OnInit, AfterViewInit {
       moving_div.style.transform = 'translate3d(0px, 0px, 0px)';
       moving_div.style.transition = '.5s ease';
 
-      // item.onmouseover = function(event) {
-      //   let target = getEventTarget(event);
-      //   let li = target.closest('li'); // get reference
-      //   if (li) {
-      //     let nodes = Array.from(li.closest('ul').children); // get array
-      //     let index = nodes.indexOf(li) + 1;
-      //     const tmp = item.querySelector('li:nth-child(' + index + ') .nav-link') as HTMLElement;
-      //     if (tmp) {
-      //       tmp.onclick = function() {
-      //         moving_div = item.querySelector('.moving-tab') ?? document.createElement('div');
-      //         let sum = 0;
-      //         if (item.classList.contains('flex-column')) {
-      //           for (let j = 1; j <= nodes.indexOf(li); j++) {
-      //             const tmpp = item?.querySelector('li:nth-child(' + j + ')') as HTMLElement
-      //             sum += tmpp.offsetHeight;
-      //             moving_div.style.transform = 'translate3d(0px,' + sum + 'px, 0px)';
-      //             moving_div.style.height = tmpp.offsetHeight + 'px';
-      //           }
-      //         } else {
-      //           for (let j = 1; j <= nodes.indexOf(li); j++) {
-      //             const tmpp = item.querySelector('li:nth-child(' + j + ')') as HTMLElement
-      //             sum += tmpp.offsetWidth;
-      //             moving_div.style.transform = 'translate3d(' + sum + 'px, 0px, 0px)';
-      //             moving_div.style.width = tmpp.offsetWidth + 'px';
-      //           }
-      //         }
-      //       }
-      //     }
-      //   }
-      // }
     });
     // Tabs navigation resize
 
@@ -240,32 +214,6 @@ export class AdminComponent implements OnInit, AfterViewInit {
         moving_div.style.padding = '0px';
         moving_div.style.transition = '.5s ease';
 
-        let li = item?.querySelector(".nav-link.active")?.parentElement;
-
-          const tmp = li?.closest('ul')?.children
-        // if (tmp) {
-        //   let nodes = Array.from(tmp); // get array
-        //   if (li) {
-        //     let index = nodes.indexOf(li) + 1;
-        //
-        //     let sum = 0;
-        //     if (item.classList.contains('flex-column')) {
-        //       for (var j = 1; j <= nodes.indexOf(li); j++) {
-        //         sum += item?.querySelector('li:nth-child(' + j + ')')?.offsetHeight;
-        //       }
-        //       moving_div.style.transform = 'translate3d(0px,' + sum + 'px, 0px)';
-        //       moving_div.style.width = item.querySelector('li:nth-child(' + index + ')').offsetWidth + 'px';
-        //       moving_div.style.height = item.querySelector('li:nth-child(' + j + ')').offsetHeight;
-        //     } else {
-        //       for (var j = 1; j <= nodes.indexOf(li); j++) {
-        //         sum += item.querySelector('li:nth-child(' + j + ')').offsetWidth;
-        //       }
-        //       moving_div.style.transform = 'translate3d(' + sum + 'px, 0px, 0px)';
-        //       moving_div.style.width = item.querySelector('li:nth-child(' + index + ')').offsetWidth + 'px';
-        //
-        //     }
-        //   }
-        // }
       });
 
       if (window.innerWidth < 991) {
@@ -291,8 +239,6 @@ export class AdminComponent implements OnInit, AfterViewInit {
 
 // End tabs navigation
   }
-
-
   //Set Sidebar Color
   sidebarColor($event: any) {
     const parent = $event.target.parentElement?.children;
@@ -327,7 +273,6 @@ export class AdminComponent implements OnInit, AfterViewInit {
     }
 
   }
-
 // Set Navbar Fixed
    navbarFixed($event: any) {
     let classes = ['position-sticky', 'blur', 'shadow-blur', 'mt-4', 'left-auto', 'top-1', 'z-index-sticky'];
@@ -345,7 +290,6 @@ export class AdminComponent implements OnInit, AfterViewInit {
       $event.target.removeAttribute("checked");
     }
   };
-
   //Set Sidebar Type
   sidebarType($event: any) {
     const parent = $event.target.parentElement.children;
@@ -372,7 +316,6 @@ export class AdminComponent implements OnInit, AfterViewInit {
 
     sidebar?.classList.add(color);
   }
-
   // Navbar blur on scroll
   navbarBlurOnScroll(id: any) {
     const navbar = document.getElementById(id);
@@ -434,12 +377,6 @@ export class AdminComponent implements OnInit, AfterViewInit {
       }
     }
   }
-
-  // Debounce Function
-  // Returns a function, that, as long as it continues to be invoked, will not
-  // be triggered. The function will be called after it stops being called for
-  // N milliseconds. If `immediate` is passed, trigger the function on the
-  // leading edge, instead of the trailing.
   debounce(func: any, wait: number, immediate?: boolean) {
     let timeout: any;
     return function() {

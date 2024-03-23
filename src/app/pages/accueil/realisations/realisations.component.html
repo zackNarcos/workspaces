@@ -1,0 +1,56 @@
+<div class="row">
+  <div class="mb-2 d-flex justify-content-between px-3">
+    <div class="">
+      <h3 *ngIf="isRealisation" class="mb-0 text-dark">Realisations</h3>
+      <h3 *ngIf="!isRealisation" class="mb-0 text-white">Realisations</h3>
+    </div>
+    <div class="d-flex z-index-1 px-3 py-2 gap-2 align-items-center justify-content-center rounded bg-white">
+      <div class="d-flex align-items-center justify-content-center cursor-pointer py-2 px-2 rounded-1"
+           [class.text-white]="!isGridView"
+           [class.bg-dark]="!isGridView"
+           (click)="isGridView = false"
+      >
+        <i class="fa fa-list-ul"></i>
+      </div>
+      <div class="d-flex align-items-center justify-content-center cursor-pointer py-2 px-2 rounded-1"
+           [class.text-white]="isGridView"
+           [class.bg-dark]="isGridView"
+           (click)="isGridView = true"
+      >
+        <i class="fa fa-th-large"></i>
+      </div>
+    </div>
+  </div>
+  <div class="col-12" *ngIf="$projects | async as projects">
+    <div class="row"
+         *ngIf="!isGridView"
+    >
+      <div class="col-md-6 col-lg-4 px-3 py-3" *ngFor="let project of projects">
+        <app-block-project-md
+          class="h-100"
+          [project]="project"
+        ></app-block-project-md>
+      </div>
+
+    </div>
+    <!-- is grid view -->
+    <div *ngIf="isGridView">
+      <div class="d-flex flex-wrap" *ngIf="isGridView">
+        <div class="col-md-6 col-ld-4 px-2 py-3 w-100" *ngFor="let project of projects">
+          <app-small-block-project
+            [project]="project"
+            [isRealisation]="isRealisation"
+          ></app-small-block-project>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="px-3">
+    <a class="text-white text-sm font-weight-bold mb-0 icon-move-right mt-auto"
+       routerLink="/realisations">
+      Voir plus
+      <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
+    </a>
+  </div>
+</div>
+

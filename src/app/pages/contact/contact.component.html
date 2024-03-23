@@ -1,0 +1,117 @@
+<!-- -------- START HEADER 8 w/ card over right bg image ------- -->
+<header>
+  <div class="page-header min-vh-85">
+    <div>
+      <img class="position-absolute fixed-top ms-auto w-50 h-100 z-index-0 d-none d-sm-none d-md-block border-radius-section border-top-end-radius-0 border-top-start-radius-0 border-bottom-end-radius-0" src="../assets/img/curved-images/curved8.jpg" alt="image">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card overflow-hidden my-8">
+            <div class="row flex-row-reverse">
+              <div class="col-lg-7">
+                <form class="p-3 z-index-3 position-relative" id="contact-form" [formGroup]="contactForm">
+                  <div class="card-header px-4 py-sm-5 py-3">
+                    <h2>Dites bonjour!</h2>
+                    <p class="lead">Je prendrais plaisir à parler avec vous.</p>
+                  </div>
+                  <div class="card-body pt-1">
+                    <div class="row">
+                      <div class="col-md-12 pe-2 mb-3">
+                        <label>Mon nom est</label>
+                        <input class="form-control"
+                               placeholder="Nom et prénom"
+                               formControlName="name"
+                               type="text">
+                      </div>
+                      <div class="col-md-12 pe-2 mb-3">
+                        <label>Mon adress mail</label>
+                        <input class="form-control"
+                               placeholder="Votre mail"
+                               formControlName="email"
+                               type="email">
+                      </div>
+                      <div class="col-md-12 pe-2 mb-3">
+                        <div class="form-group mb-0">
+                          <label>Votre message</label>
+                          <textarea name="message"
+                                    class="form-control"
+                                    id="message" rows="6"
+                                    placeholder="je veux dire que..."
+                                    formControlName="message"
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 text-end ms-auto">
+                        <button type="submit"
+                                [className]="contactForm.valid ? 'btn btn-round bg-gradient-info mb-0' : 'btn btn-round bg-gradient-info mb-0 disabled'"
+                                [disabled]="!contactForm.valid"
+                                (click)="submitContactForm()"
+                        >Envoyer le message</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-5 position-relative bg-cover px-0" style="background-image: url('../assets/img/curved-images/curved7.jpg')">
+                <div class="position-absolute z-index-2 w-100 h-100 top-0 d-lg-block d-none" style="right: -87%;)">
+                  <img src="../assets/img/shapes/wave-2.png" class="h-100 ms-2 rotate-90" alt="vertical-wave">
+                </div>
+                <div class="z-index-2 text-center d-flex h-100 w-100 d-flex m-auto justify-content-center">
+                  <div class="mask bg-gradient-primary opacity-9"></div>
+                  <div class="p-5 pe-sm-8 position-relative text-start my-auto z-index-2">
+                    <h3 class="text-white">
+                      Informations de contact
+                    </h3>
+                    <p class="text-white opacity-8 mb-4">Remplissez le formulaire et je vous répondrais dans les 24 heures.</p>
+                    <div class="d-flex p-2 text-white">
+                      <div>
+                        <i class="fas fa-phone text-sm"></i>
+                      </div>
+                      <div class="ps-3">
+                        <span class="text-sm opacity-8">(+221) 77 506 87 21</span>
+                      </div>
+                    </div>
+                    <div class="d-flex p-2 text-white">
+                      <div>
+                        <i class="fa fa-whatsapp text-sm"></i>
+                      </div>
+                      <div class="ps-3">
+                        <span class="text-sm opacity-8">(+221) 77 506 87 21</span>
+                      </div>
+                    </div>
+                    <div class="d-flex p-2 text-white">
+                      <div>
+                        <i class="fas fa-envelope text-sm"></i>
+                      </div>
+                      <div class="ps-3">
+                        <span class="text-sm opacity-8">zackabess@gmail.com</span>
+                      </div>
+                    </div>
+                    <div class="d-flex p-2 text-white">
+                      <div>
+                        <i class="fas fa-map-marker-alt text-sm"></i>
+                      </div>
+                      <div class="ps-3">
+                        <span class="text-sm opacity-8">Dakar, Sénégal</span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-4">
+                      <a [href]="links.facebook"><i class="fab fa-facebook text-lg text-white me-4"></i></a>
+                      <a [href]="links.instagram"><i class="fab fa-instagram text-lg text-white me-4"></i></a>
+                      <a [href]="links.github"><i class="fab fa-github text-lg text-white me-4"></i></a>
+                      <a [href]="links.youtube"><i class="fab fa-youtube text-lg text-white me-4"></i></a>
+                      <a [href]="links.linkedin"><i class="fab fa-linkedin text-lg text-white"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
