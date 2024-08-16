@@ -6,6 +6,8 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
 import { FrontNavBarComponent } from './front-nav-bar/front-nav-bar.component';
 import { FrontFooterComponent } from './front-footer/front-footer.component';
 import {ReactiveFormsModule} from "@angular/forms";
+import { DropdownComponent } from './dropdown/dropdown.component';
+import { DropdownItemComponent } from './dropdown/dropdown-item/dropdown-item.component';
 
 
 
@@ -14,7 +16,9 @@ import {ReactiveFormsModule} from "@angular/forms";
         SideBarsComponent,
         NavBarComponent,
         FrontNavBarComponent,
-        FrontFooterComponent
+        FrontFooterComponent,
+        DropdownComponent,
+        DropdownItemComponent
     ],
   exports: [
     SideBarsComponent,

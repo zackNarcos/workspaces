@@ -29,10 +29,24 @@ const selectIsLoadUser = createSelector(
   (state: ModuleState) => state.isLoadUser
 );
 
+const selectSingleProject = createSelector(
+  selectModuleState,
+  (state: ModuleState) => state.singleProject
+);
+
+const selectIsLoadSingleProject = createSelector(
+  selectModuleState,
+  (state: ModuleState) => state.isLoadSingleProject
+);
+
+
+
 export const moduleStoreSelectors = {
   selectSelectedProject,
   selectProject,
   selectIsLoadMoreProject,
   selectUser,
   selectIsLoadUser,
+  selectSingleProject,
+  selectIsLoadSingleProject
 }

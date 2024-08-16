@@ -23,6 +23,11 @@ export class SideBarsComponent {
       icon: "fa fa-code"
     },
     {
+      title: "Formations",
+      path: "/admin/formations",
+      icon: "fa fa-graduation-cap"
+    },
+    {
       title: "Utilisateurs",
       path: "/admin/users",
       icon: "fa fa-users"

@@ -68,7 +68,7 @@
         },
         {
           "file": "angular.json",
-          "hash": "498678011070583400"
+          "hash": "12344071208953101140"
         },
         {
           "file": "package-lock.json",
@@ -116,7 +116,7 @@
         },
         {
           "file": "src/app/app-routing.module.ts",
-          "hash": "11456283394279234291",
+          "hash": "1439742680273292579",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router"
@@ -220,7 +220,7 @@
         },
         {
           "file": "src/app/components/blocks/block-project-md/block-project-md.component.html",
-          "hash": "12976226379167833998"
+          "hash": "5009065376846016317"
         },
         {
           "file": "src/app/components/blocks/block-project-md/block-project-md.component.scss",
@@ -242,7 +242,7 @@
         },
         {
           "file": "src/app/components/blocks/block-project/block-project.component.html",
-          "hash": "17574430045838215538"
+          "hash": "13209447965521291664"
         },
         {
           "file": "src/app/components/blocks/block-project/block-project.component.scss",
@@ -264,15 +264,16 @@
         },
         {
           "file": "src/app/components/blocks/blocks.module.ts",
-          "hash": "3735332635467451933",
+          "hash": "3811810980885310743",
           "deps": [
             "npm:@angular/core",
-            "npm:@angular/common"
+            "npm:@angular/common",
+            "npm:@angular/router"
           ]
         },
         {
           "file": "src/app/components/blocks/small-block-project/small-block-project.component.html",
-          "hash": "3810103494900002659"
+          "hash": "4368169585838349414"
         },
         {
           "file": "src/app/components/blocks/small-block-project/small-block-project.component.scss",
@@ -287,14 +288,58 @@
         },
         {
           "file": "src/app/components/blocks/small-block-project/small-block-project.component.ts",
-          "hash": "6627374850189489370",
+          "hash": "4564134350237371317",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/components/ui/dropdown/dropdown-item/dropdown-item.component.html",
+          "hash": "12838118944424787852"
+        },
+        {
+          "file": "src/app/components/ui/dropdown/dropdown-item/dropdown-item.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/components/ui/dropdown/dropdown-item/dropdown-item.component.spec.ts",
+          "hash": "16547940536725077427",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/components/ui/dropdown/dropdown-item/dropdown-item.component.ts",
+          "hash": "13980278862063944498",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/components/ui/dropdown/dropdown.component.html",
+          "hash": "13262837025594203753"
+        },
+        {
+          "file": "src/app/components/ui/dropdown/dropdown.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/components/ui/dropdown/dropdown.component.spec.ts",
+          "hash": "237678468577562439",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/components/ui/dropdown/dropdown.component.ts",
+          "hash": "15385856671127637945",
           "deps": [
             "npm:@angular/core"
           ]
         },
         {
           "file": "src/app/components/ui/front-footer/front-footer.component.html",
-          "hash": "13005827526779814396"
+          "hash": "4700742035967355561"
         },
         {
           "file": "src/app/components/ui/front-footer/front-footer.component.scss",
@@ -309,14 +354,15 @@
         },
         {
           "file": "src/app/components/ui/front-footer/front-footer.component.ts",
-          "hash": "4693640140256960702",
+          "hash": "2506014758949765656",
           "deps": [
-            "npm:@angular/core"
+            "npm:@angular/core",
+            "npm:@angular/forms"
           ]
         },
         {
           "file": "src/app/components/ui/front-nav-bar/front-nav-bar.component.html",
-          "hash": "5103873024080385146"
+          "hash": "13814460536680296052"
         },
         {
           "file": "src/app/components/ui/front-nav-bar/front-nav-bar.component.scss",
@@ -382,11 +428,12 @@
         },
         {
           "file": "src/app/components/ui/ui.module.ts",
-          "hash": "2429256675154383589",
+          "hash": "5052854100595068470",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
-            "npm:@angular/router"
+            "npm:@angular/router",
+            "npm:@angular/forms"
           ]
         },
         {
@@ -409,7 +456,7 @@
         },
         {
           "file": "src/app/core/interceptors/auth.interceptor.ts",
-          "hash": "7760458077722407514",
+          "hash": "7737627270583311768",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
@@ -443,8 +490,17 @@
           ]
         },
         {
+          "file": "src/app/core/services/mail.service.ts",
+          "hash": "10260159741035463483",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
           "file": "src/app/core/services/project.service.ts",
-          "hash": "14354828289370646027",
+          "hash": "5030464643771954218",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
@@ -462,14 +518,14 @@
         },
         {
           "file": "src/app/core/store/module-store.actions.ts",
-          "hash": "9159208425012842189",
+          "hash": "9245153283444523663",
           "deps": [
             "npm:@ngrx/store"
           ]
         },
         {
           "file": "src/app/core/store/module-store.effects.ts",
-          "hash": "12690222892956772120",
+          "hash": "1921477005164939454",
           "deps": [
             "npm:@angular/core",
             "npm:@ngrx/effects",
@@ -489,21 +545,21 @@
         },
         {
           "file": "src/app/core/store/module-store.reducer.ts",
-          "hash": "4575950698846189911",
+          "hash": "7851286589409055292",
           "deps": [
             "npm:@ngrx/store"
           ]
         },
         {
           "file": "src/app/core/store/module-store.selectors.ts",
-          "hash": "13641748288035849787",
+          "hash": "6719092745629659752",
           "deps": [
             "npm:@ngrx/store"
           ]
         },
         {
           "file": "src/app/core/store/module-store.service.ts",
-          "hash": "17161094583622435614",
+          "hash": "5501837414332963687",
           "deps": [
             "npm:@angular/core",
             "npm:@ngrx/store"
@@ -526,7 +582,7 @@
         },
         {
           "file": "src/app/layout/admin/admin.component.ts",
-          "hash": "7249669361028869556",
+          "hash": "7801543089062382218",
           "deps": [
             "npm:@angular/core",
             "npm:perfect-scrollbar"
@@ -565,11 +621,12 @@
         },
         {
           "file": "src/app/layout/users-layout/users-layout.module.ts",
-          "hash": "10945574463195901755",
+          "hash": "4741253011403221761",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
-            "npm:@angular/router"
+            "npm:@angular/router",
+            "npm:@angular/forms"
           ]
         },
         {
@@ -596,11 +653,11 @@
         },
         {
           "file": "src/app/pages/accueil/accueil.component.html",
-          "hash": "13167125292602723554"
+          "hash": "8255388420364645323"
         },
         {
           "file": "src/app/pages/accueil/accueil.component.ts",
-          "hash": "5270514670376619930",
+          "hash": "5414605278206823004",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/forms"
@@ -608,16 +665,17 @@
         },
         {
           "file": "src/app/pages/accueil/accueil.module.ts",
-          "hash": "15953283446385153955",
+          "hash": "14976037547875879807",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
-            "npm:@angular/forms"
+            "npm:@angular/forms",
+            "npm:@angular/router"
           ]
         },
         {
           "file": "src/app/pages/accueil/realisations/realisations.component.html",
-          "hash": "1499945811486430344"
+          "hash": "1367824825836067784"
         },
         {
           "file": "src/app/pages/accueil/realisations/realisations.component.scss",
@@ -632,16 +690,17 @@
         },
         {
           "file": "src/app/pages/accueil/realisations/realisations.component.ts",
-          "hash": "12822689718415229868",
+          "hash": "9428345460492732010",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/material",
-            "npm:@angular/router"
+            "npm:@angular/router",
+            "npm:rxjs"
           ]
         },
         {
           "file": "src/app/pages/contact/contact.component.html",
-          "hash": "12225772887497662583"
+          "hash": "16657830854179540708"
         },
         {
           "file": "src/app/pages/contact/contact.component.scss",
@@ -656,9 +715,11 @@
         },
         {
           "file": "src/app/pages/contact/contact.component.ts",
-          "hash": "10696441177691355403",
+          "hash": "17082576417099208354",
           "deps": [
-            "npm:@angular/core"
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/common"
           ]
         },
         {
@@ -687,7 +748,7 @@
         },
         {
           "file": "src/app/pages/front-realisations/front-realisations.component.html",
-          "hash": "12042966312003394160"
+          "hash": "4387097053243851163"
         },
         {
           "file": "src/app/pages/front-realisations/front-realisations.component.scss",
@@ -709,7 +770,7 @@
         },
         {
           "file": "src/app/pages/projects/create/create.component.html",
-          "hash": "9220493248654548026"
+          "hash": "9123672597094215455"
         },
         {
           "file": "src/app/pages/projects/create/create.component.scss",
@@ -724,7 +785,7 @@
         },
         {
           "file": "src/app/pages/projects/create/create.component.ts",
-          "hash": "17104950205318711427",
+          "hash": "16477944099263274980",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/forms",
@@ -733,7 +794,7 @@
         },
         {
           "file": "src/app/pages/projects/projects.component.html",
-          "hash": "3736721354349532293"
+          "hash": "8470778036611735264"
         },
         {
           "file": "src/app/pages/projects/projects.component.scss",
@@ -748,7 +809,7 @@
         },
         {
           "file": "src/app/pages/projects/projects.component.ts",
-          "hash": "16217726627272760537",
+          "hash": "1868953845464054285",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/material",
@@ -757,7 +818,7 @@
         },
         {
           "file": "src/app/pages/projects/projects.module.ts",
-          "hash": "6942782311117964874",
+          "hash": "13076568723160799280",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
@@ -1136,7 +1197,7 @@
         },
         {
           "file": "src/assets/img/people.jpg",
-          "hash": "10034594281249257570"
+          "hash": "2269759120948108375"
         },
         {
           "file": "src/assets/img/shapes/pattern-lines.svg",
@@ -1309,6 +1370,10 @@
         {
           "file": "src/assets/img/vr-bg.jpg",
           "hash": "4661377487926226656"
+        },
+        {
+          "file": "src/assets/js/core/popper.min.js",
+          "hash": "17523685477517993236"
         },
         {
           "file": "src/assets/js/plugins/Chart.extension.js",
@@ -2014,11 +2079,11 @@
         },
         {
           "file": "src/environments/environment.prod.ts",
-          "hash": "14264926834405527102"
+          "hash": "379195889926388579"
         },
         {
           "file": "src/environments/environment.ts",
-          "hash": "7091029441197448010"
+          "hash": "5371717289828183960"
         },
         {
           "file": "src/favicon.ico",
@@ -2026,7 +2091,7 @@
         },
         {
           "file": "src/index.html",
-          "hash": "16693595440404107555"
+          "hash": "14736749924624292383"
         },
         {
           "file": "src/main.ts",

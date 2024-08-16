@@ -12,6 +12,10 @@ export enum ModuleStoreActionsTypes {
   loadProjectSuccessAnonyme = '[Module] Load Project Success',
   loadProjectFailureAnonyme = '[Module] Load Project Failure',
 
+  loadSingleProject = '[Module] Load Single Project',
+  loadSingleProjectSuccess = '[Module] Load Single Project Success',
+  loadSingleProjectFailure = '[Module] Load Single Project Failure',
+
   addProject = '[Module] Add Project',
   addProjectSuccess = '[Module] Add Project Success',
   addProjectFailure = '[Module] Add Project Failure',
@@ -81,7 +85,7 @@ const addProjectFailure = createAction(
 
 const updateProject = createAction(
   ModuleStoreActionsTypes.updateProject,
-  props<{ project: Project }>()
+  props<{ project: Project, id: number }>()
 );
 
 const updateProjectSuccess = createAction(
@@ -96,7 +100,7 @@ const updateProjectFailure = createAction(
 
 const deleteProject = createAction(
   ModuleStoreActionsTypes.deleteProject,
-  props<{ project: Project }>()
+  props<{ id: number }>()
 );
 
 const deleteProjectSuccess = createAction(
@@ -128,6 +132,21 @@ const getUserFailure = createAction(
   props<{ error: any }>()
 );
 
+const loadSingleProject = createAction(
+  ModuleStoreActionsTypes.loadSingleProject,
+  props<{ id: number }>()
+);
+
+const loadSingleProjectSuccess = createAction(
+  ModuleStoreActionsTypes.loadSingleProjectSuccess,
+  props<{ project: Project }>()
+);
+
+const loadSingleProjectFailure = createAction(
+  ModuleStoreActionsTypes.loadSingleProjectFailure,
+  props<{ error: any }>()
+);
+
 export const ModuleActions = {
   clear,
   loadProject,
@@ -149,4 +168,7 @@ export const ModuleActions = {
   loadProjectAnonyme,
   loadProjectAnonymeSuccess,
   loadProjectAnonymeFailure,
+  loadSingleProject,
+  loadSingleProjectSuccess,
+  loadSingleProjectFailure
 };

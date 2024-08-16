@@ -10,6 +10,7 @@ import {FrontRealisationsComponent} from "../../pages/front-realisations/front-r
 import {AProposComponent} from "../../pages/a-propos/a-propos.component";
 import {ContactComponent} from "../../pages/contact/contact.component";
 import {ReactiveFormsModule} from "@angular/forms";
+import {AccueilModule} from "../../pages/accueil/accueil.module";
 
 const routes = [
   {
@@ -45,12 +46,13 @@ const routes = [
     AProposComponent,
     ContactComponent,
   ],
-    imports: [
-        CommonModule,
-        RouterModule.forChild(routes),
-        BlocksModule,
-        UiModule,
-        ReactiveFormsModule,
-    ]
+  imports: [
+    CommonModule,
+    RouterModule.forChild(routes),
+    BlocksModule,
+    UiModule,
+    ReactiveFormsModule,
+    AccueilModule,
+  ]
 })
 export class UsersLayoutModule { }

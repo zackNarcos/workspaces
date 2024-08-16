@@ -12,6 +12,7 @@ export class AdminComponent implements OnInit, AfterViewInit {
   constructor(
     private moduleStoreService: ModuleStoreService
   ) {
+    console.log('AdminComponent')
     this.moduleStoreService.loadProjects()
   }
 

@@ -9,8 +9,10 @@ export interface ModuleState {
   user: User | null,
   isLoadMoreProject: boolean,
   selectedProject: Project | null,
+  singleProject: Project | null,
   error?: any;
   isLoadUser: boolean;
+  isLoadSingleProject: boolean;
 }
 
 export const ModuleInitialState: ModuleState = {
@@ -18,8 +20,10 @@ export const ModuleInitialState: ModuleState = {
   user: null,
   isLoadMoreProject: true,
   selectedProject: null,
+  singleProject: null,
   error: null,
   isLoadUser: true,
+  isLoadSingleProject: true
 }
 
 const reducer = createReducer(
@@ -37,18 +41,21 @@ const reducer = createReducer(
     on(ModuleActions.deleteProjectSuccess, state => ({...state})),
     on(ModuleActions.deleteProjectFailure, (state, {error}) => ({...state, error})),
     on(ModuleActions.updateProject, state => ({...state})),
-    on(ModuleActions.updateProjectSuccess, state => ({...state})),
+    on(ModuleActions.updateProjectSuccess, (state, {project}) => ({...state, projects: state.projects.map(p => p.id === project.id ? project : p), selectedProject: project, error: null})),
     on(ModuleActions.updateProjectFailure, (state, {error}) => ({...state, error})),
     on(ModuleActions.addProject, state => ({...state})),
     on(ModuleActions.addProjectSuccess, state => ({...state})),
     on(ModuleActions.addProjectFailure, (state, {error}) => ({...state, error})),
-    on(ModuleActions.deleteProject, state => ({...state})),
+    on(ModuleActions.deleteProject, (state, { id }) => ({...state, projects: state.projects.filter(p => p.id !== id)})),
     on(ModuleActions.deleteProjectSuccess, state => ({...state})),
     on(ModuleActions.deleteProjectFailure, (state, {error}) => ({...state, error})),
     on(ModuleActions.getUser, state => ({...state, isLoadUser: true})),
     on(ModuleActions.getUserSuccess, (state, {user}) => ({...state, user, isLoadUser: false})),
     on(ModuleActions.getUserFailure, (state, {error}) => ({...state, error, isLoadUser: false})),
-  );
+    on(ModuleActions.loadSingleProject, state => ({...state, isLoadSingleProject: true})),
+    on(ModuleActions.loadSingleProjectSuccess, (state, {project}) => ({...state, singleProject: project})),
+    on(ModuleActions.loadSingleProjectFailure, (state, {error}) => ({...state, error, isLoadSingleProject: false})),
+);
 
 export function moduleReducer(state: ModuleState | undefined, action: Action) {
   return reducer(state, action);

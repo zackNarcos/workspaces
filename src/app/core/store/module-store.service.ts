@@ -21,8 +21,8 @@ export class ModuleStoreService {
   selectSelectedProject() { return this.store.select(moduleStoreSelectors.selectSelectedProject); }
   getProjects() { return this.store.select(moduleStoreSelectors.selectProject); }
   selectIsLoadMoreproject() { return this.store.select(moduleStoreSelectors.selectIsLoadMoreProject); }
-  deleteProject(project: any) { this.store.dispatch(ModuleActions.deleteProject({project})); }
-  updateProject(project: any) { this.store.dispatch(ModuleActions.updateProject({project})); }
+  deleteProject(id: number) { this.store.dispatch(ModuleActions.deleteProject({id})); }
+  updateProject(project: any, id: number) { this.store.dispatch(ModuleActions.updateProject({project, id})); }
   clear() { this.store.dispatch(ModuleActions.clear()); }
   getUser() { return this.store.select(moduleStoreSelectors.selectUser); }
   getIsLoadUser() { return this.store.select(moduleStoreSelectors.selectIsLoadUser); }
@@ -30,5 +30,17 @@ export class ModuleStoreService {
 
   selectUser() {
     return this.store.select(moduleStoreSelectors.selectUser);
+  }
+
+  getIsLoadMoreSingleProject() {
+    return this.store.select(moduleStoreSelectors.selectIsLoadSingleProject);
+  }
+
+  getSingleProject() {
+    return this.store.select(moduleStoreSelectors.selectSingleProject);
+  }
+
+  loadSingleProject(id: number) {
+    this.store.dispatch(ModuleActions.loadSingleProject({id}));
   }
 }

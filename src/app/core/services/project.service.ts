@@ -27,12 +27,17 @@ export class ProjectService {
     return this.http.get<Project[]>(`${this.URL_API}/projects`);
   }
 
-  putProject(project: Project) {
-    return this.http.put(`${this.URL_API}/admin/projects/${project.id}`,project)
+  getProject(id: number):Observable<Project>{
+    return this.http.get<Project>(`${this.URL_API}/admin/projects/${id}`);
   }
 
-  deleteProject(project: Project) {
-    return this.http.delete(`${this.URL_API}/admin/projects/${project.id}`)
+  putProject(project: any, id: number) {
+    console.log('project', project)
+    return this.http.put(`${this.URL_API}/admin/projects/${id}`,project)
+  }
+
+  deleteProject(id: number) {
+    return this.http.delete(`${this.URL_API}/admin/projects/${id}`)
   }
 
 }

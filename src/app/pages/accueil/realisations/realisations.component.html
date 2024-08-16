@@ -36,7 +36,7 @@
     <!-- is grid view -->
     <div *ngIf="isGridView">
       <div class="d-flex flex-wrap" *ngIf="isGridView">
-        <div class="col-md-6 col-ld-4 px-2 py-3 w-100" *ngFor="let project of projects">
+        <div class="col-md-6 col-lg-4 px-2 py-3" *ngFor="let project of projects">
           <app-small-block-project
             [project]="project"
             [isRealisation]="isRealisation"

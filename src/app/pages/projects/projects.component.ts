@@ -10,7 +10,7 @@ import {ModuleStoreService} from "../../core/store/module-store.service";
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent {
-  isGridView = true;
+  isGridView = false;
   $projects = this.moduleStoreService.getProjects();
 
   constructor(
@@ -27,5 +27,10 @@ export class ProjectsComponent {
 
   async goto(s: string) {
     await this.router.navigate([s]);
+  }
+
+  deleteProject(id: number) {
+    console.log('delete project', id)
+    this.moduleStoreService.deleteProject(id);
   }
 }

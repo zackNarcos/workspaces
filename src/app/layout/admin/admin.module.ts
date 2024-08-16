@@ -17,6 +17,7 @@ const routes: Routes = [
       { path: 'dashboard', component: DashboardComponent },
       { path: 'projects', loadChildren: () => import('../../pages/projects/projects.module').then(m => m.ProjectsModule) },
       { path: 'skills', loadChildren: () => import('../../pages/skills/skills.module').then(m => m.SkillsModule) },
+      { path: 'formations', loadChildren: () => import('../../pages/formations/formations.module').then(m => m.FormationsModule) },
       { path: 'users', component: UsersComponent },
     ]
   }

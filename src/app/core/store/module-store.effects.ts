@@ -65,9 +65,29 @@ export class ModuleStoreEffects {
     )
   ));
 
+  deleteProject$ = createEffect(() => this.actions$.pipe(
+    ofType(ModuleActions.deleteProject),
+    switchMap((action) => this.projectService.deleteProject(action.id)
+      .pipe(
+        map((data: any) => {
+          let project
+          this.moduleStoreService.getProjects().pipe(take(1)).subscribe((projects) => {
+            const index = projects.findIndex((pay) => pay.id === action.id)
+            project = projects[index]
+            projects.splice(index, 1)
+          })
+          return ModuleActions.deleteProjectSuccess({project: project})
+        }),
+        catchError((err) => {
+          return of(ModuleActions.deleteProjectFailure({error: err}))
+        })
+      )
+    )
+  ));
+
   updateProject$ = createEffect(() => this.actions$.pipe(
     ofType(ModuleActions.updateProject),
-    switchMap((action) => this.projectService.putProject(action.project)
+    switchMap((action) => this.projectService.putProject(action.project, action.id)
       .pipe(
         map((project: any) => {
           this.moduleStoreService.getProjects().pipe(take(1)).subscribe((projects) => {
@@ -78,6 +98,20 @@ export class ModuleStoreEffects {
         }),
         catchError((err) => {
           return of(ModuleActions.updateProjectFailure({error: err}))
+        })
+      )
+    )
+  ));
+
+  getSingeProject$ = createEffect(() => this.actions$.pipe(
+    ofType(ModuleActions.loadSingleProject),
+    switchMap((action) => this.projectService.getProject(action.id)
+      .pipe(
+        map((project: any) => {
+          return ModuleActions.loadSingleProjectSuccess({project: project})
+        }),
+        catchError((err) => {
+          return of(ModuleActions.loadSingleProjectFailure({error: err}))
         })
       )
     )

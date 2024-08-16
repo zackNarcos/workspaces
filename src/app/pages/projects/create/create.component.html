@@ -3,7 +3,8 @@
     <div class="col-xl-6 col-lg-7 col-md-9 mx-auto">
       <div class="card z-index-0">
         <div class="card-header text-center pt-4">
-          <h5>Add new Project</h5>
+          <h5 *ngIf="isEdit">Modifier votre Project: {{ (project$ | async)?.title }}</h5>
+          <h5 *ngIf="!isEdit">Add new Project</h5>
         </div>
         <div class="card-body">
           <form role="form text-left" [formGroup]="projectForm">
@@ -25,19 +26,19 @@
                      class="form-control"
                      placeholder="Link">
             </div>
+<!--            <div class="mb-3">-->
+<!--              <label>-->
+<!--                Logo-->
+<!--              </label>-->
+<!--              <input type="file"-->
+<!--                      formControlName="logo"-->
+<!--                     (change)="onLogoChange($event)"-->
+<!--                     class="form-control"-->
+<!--                     placeholder="logo">-->
+<!--            </div>-->
             <div class="mb-3">
               <label>
-                Logo
-              </label>
-              <input type="file"
-                      formControlName="logo"
-                     (change)="onLogoChange($event)"
-                     class="form-control"
-                     placeholder="logo">
-            </div>
-            <div class="mb-3">
-              <label>
-                Image
+                Image <span *ngIf="isEdit"> (keep empty if you don't want to change the image)</span>
               </label>
               <input type="file"
                      formControlName="image"
